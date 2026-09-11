@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="google-site-verification" content="Hd45ZWf0ePvsE1nvzNQyM-USTlvSp7tZcX5690b0S6I" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DAV Class 8 Solution Hub- Home</title>
+
+    <style>
+
+    * {
+        box-sizing: border-box;
+    }
+
+    html, body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8fafc;
+        color: #1e293b;
+    }
+
+
+    /* =========================
+       NAVIGATION BAR
+    ========================= */
+
+    nav {
+        background-color: #0f172a;
+        padding: 10px 20px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    /* Logo Link */
+
+    .logo-link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+
+
+    /* =========================
+       LOGO
+       ONLY ROUND PART OF IMAGE
+    ========================= */
+
+    .logo-circle {
+        width: 50px;
+        height: 50px;
+
+        border-radius: 50%;
+        overflow: hidden;
+
+        position: relative;
+
+        display: block;
+
+        flex-shrink: 0;
+    }
+
+    .logo-circle img {
+        position: absolute;
+
+        width: 140px;
+        height: auto;
+
+        max-width: none;
+
+        left: 50%;
+        top: 50%;
+
+        transform: translate(-50%, -50%);
+
+        display: block;
+    }
+
+
+    /* =========================
+       NAV MENU
+    ========================= */
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        gap: 20px;
+    }
+
+    nav ul li a {
+        color: #cbd5e1;
+
+        text-decoration: none;
+
+        font-size: 1rem;
+        font-weight: 600;
+
+        transition: color 0.2s;
+    }
+
+    nav ul li a:hover {
+        color: #ffffff;
+    }
+
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    header {
+        background: linear-gradient(
+            135deg,
+            #1e3a8a,
+            #0f172a
+        );
+
+        color: white;
+
+        text-align: center;
+
+        padding: 60px 20px;
+    }
+
+    header h1 {
+        margin: 0;
+
+        font-size: 2.8rem;
+    }
+
+    header p {
+        margin: 15px 0 0 0;
+
+        font-size: 1.2rem;
+
+        color: #93c5fd;
+    }
+
+
+    /* =========================
+       MAIN CONTAINER
+    ========================= */
+
+    .container {
+        max-width: 1000px;
+
+        margin: 40px auto;
+
+        padding: 0 20px;
+
+        margin-bottom: 80px;
+    }
+
+
+    /* =========================
+       WELCOME
+       NO BOX
+    ========================= */
+
+    .welcome-box {
+        background-color: transparent;
+
+        padding: 0;
+
+        border-radius: 0;
+
+        box-shadow: none;
+
+        text-align: center;
+
+        margin-bottom: 40px;
+    }
+
+    .welcome-box h2 {
+        color: #1e3a8a;
+
+        margin-top: 0;
+    }
+
+    .welcome-box p {
+        color: #64748b;
+
+        font-size: 1.1rem;
+
+        line-height: 1.6;
+    }
+
+
+    /* =========================
+       SECTION TITLE
+    ========================= */
+
+    .section-title {
+        font-size: 1.8rem;
+
+        color: #0f172a;
+
+        margin-bottom: 20px;
+
+        border-left: 5px solid #f97316;
+
+        padding-left: 10px;
+    }
+
+
+    /* =========================
+       SUBJECT GRID
+    ========================= */
+
+    .subject-grid {
+        display: grid;
+
+        grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+        gap: 25px;
+    }
+
+
+    /* =========================
+       SUBJECT
+       NO BOX
+    ========================= */
+
+    .subject-card {
+        background-color: transparent;
+
+        border-radius: 0;
+
+        box-shadow: none;
+
+        padding: 0;
+
+        text-align: center;
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: space-between;
+    }
+
+
+    .subject-card.active {
+        border-top: none;
+    }
+
+
+    .subject-card.disabled {
+        border-top: none;
+
+        opacity: 1;
+    }
+
+
+    .subject-card h3 {
+        margin-top: 0;
+
+        color: #1e3a8a;
+
+        font-size: 1.6rem;
+    }
+
+
+    .subject-card p {
+        color: #64748b;
+
+        font-size: 1rem;
+
+        line-height: 1.5;
+
+        margin-bottom: 20px;
+    }
+
+
+    /* =========================
+       BUTTON
+    ========================= */
+
+    .btn {
+        display: inline-block;
+
+        background-color: #f97316;
+
+        color: white;
+
+        text-decoration: none;
+
+        padding: 12px 24px;
+
+        border-radius: 6px;
+
+        font-weight: 600;
+    }
+
+
+    .btn-disabled {
+        display: inline-block;
+
+        background-color: #94a3b8;
+
+        color: white;
+
+        text-decoration: none;
+
+        padding: 12px 24px;
+
+        border-radius: 6px;
+
+        font-weight: 600;
+
+        cursor: not-allowed;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+        background-color: #0f172a;
+
+        color: #94a3b8;
+
+        text-align: center;
+
+        padding: 20px;
+
+        position: relative;
+
+        bottom: 0;
+
+        width: 100%;
+
+        font-size: 0.95rem;
+    }
+
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 600px) {
+
+        nav {
+            padding: 10px 15px;
+        }
+
+        .logo-circle {
+            width: 45px;
+            height: 45px;
+        }
+
+        .logo-circle img {
+            width: 126px;
+        }
+
+        nav ul {
+            gap: 14px;
+        }
+
+        nav ul li a {
+            font-size: 0.9rem;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+        }
+
+        header p {
+            font-size: 1rem;
+        }
+
+        .container {
+            padding: 0 15px;
+        }
+    }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         TOP NAVIGATION
+    ========================= -->
+
+    <nav>
+
+        <a href="index.html" class="logo-link">
+
+            <!--
+                आपकी बड़ी logo image में से
+                सिर्फ बीच का गोल हिस्सा दिखेगा
+            -->
+
+            <span class="logo-circle">
+
+                <img
+                    src="logo.png"
+                    alt="DAV 8 Solutions Logo"
+                >
+
+            </span>
+
+        </a>
+
+
+        <ul>
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="science.html">
+                    Science
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html">
+                    About
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+
+    <!-- =========================
+         HEADER
+    ========================= -->
+
+    <header>
+
+        <h1>
+            DAV Class 8 Solution Hub
+        </h1>
+
+        <p>
+            Your Ultimate Companion for Academic Success
+        </p>
+
+    </header>
+
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================= -->
+
+    <div class="container">
+
+
+        <div class="welcome-box">
+
+            <h2>
+                Welcome to Class 8 Learning Portal
+            </h2>
+
+            <p>
+                Get accurate, step-by-step chapter solutions,
+                textbook question answers, and back exercises
+                designed specifically for DAV Class 8 students
+                in an easy-to-understand format.
+            </p>
+
+        </div>
+
+
+        <h2 class="section-title">
+            Select Your Subject
+        </h2>
+
+
+        <div class="subject-grid">
+
+
+            <!-- SCIENCE -->
+
+            <div class="subject-card active">
+
+                <div>
+
+                    <h3>
+                        Science
+                    </h3>
+
+                    <H2>
+                        Explore detailed, step-by-step solutions
+                        and clear explanations for all chapters
+                        of the DAV Class 8 Science textbook according
+                        to new syllabus 2026-2027.
+                    </h2>
+
+                </div>
+
+
+                <a
+                    href="science.html"
+                    class="btn"
+                >
+                    View Solutions
+                </a>
+
+            </div>
+
+
+
+            <!-- MATHEMATICS -->
+
+            <div class="subject-card disabled">
+
+                <div>
+
+                    <h3>
+                        Mathematics
+                    </h3>
+
+                    <H4>
+                        Stay tuned! Accurate and detailed
+                        step-by-step solutions for Maths chapters
+                        are currently under preparation.
+                    </h4>
+
+                </div>
+
+
+                <a
+                    href="#"
+                    class="btn-disabled"
+                >
+                    Coming Soon
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 DAV Class 8 Solution Hub.
+            Built for Students.
+        </p>
+
+    </footer>
+
+
+</body>
+</html>
