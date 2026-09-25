@@ -1,98 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://sitemaps.org">
-  <!-- Main Pages -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Main Page -->
   <url>
-    <loc>https://github.io</loc>
+    <loc>https://davclass8solutionhub.github.io/</loc>
     <priority>1.00</priority>
   </url>
+
+  <!-- Other Main Pages -->
   <url>
-    <loc>https://github.ioabout.html</loc>
+    <loc>https://davclass8solutionhub.github.io/about.html</loc>
     <priority>0.80</priority>
   </url>
+
   <url>
-    <loc>https://github.ioscience.html</loc>
+    <loc>https://davclass8solutionhub.github.io/science.html</loc>
     <priority>0.80</priority>
   </url>
 
   <!-- Science Chapter Pages -->
   <url>
-    <loc>https://github.iochapter1.html</loc>
+    <loc>https://davclass8solutionhub.github.io/chapter1.html</loc>
     <priority>0.70</priority>
   </url>
+
   <url>
-    <loc>https://github.iochapter2.html</loc>
+    <loc>https://davclass8solutionhub.github.io/chapter2.html</loc>
     <priority>0.70</priority>
   </url>
+
   <url>
-    <loc>https://github.iochapter3.html</loc>
+    <loc>https://davclass8solutionhub.github.io/chapter3.html</loc>
     <priority>0.70</priority>
   </url>
+
   <url>
-    <loc>https://github.iochapter4.html</loc>
+    <loc>https://davclass8solutionhub.github.io/chapter4.html</loc>
     <priority>0.70</priority>
   </url>
+
   <url>
-    <loc>https://github.iochapter5.html</loc>
+    <loc>https://davclass8solutionhub.github.io/chapter5.html</loc>
     <priority>0.70</priority>
   </url>
+
   <url>
-    <loc>https://github.iochapter6.html</loc>
+    <loc>https://davclass8solutionhub.github.io/chapter6.html</loc>
     <priority>0.70</priority>
   </url>
+
   <url>
-    <loc>https://github.iochapter7.html</loc>
+    <loc>https://davclass8solutionhub.github.io/chapter7.html</loc>
     <priority>0.70</priority>
   </url>
+
   <url>
-    <loc>https://github.iochapter8.html</loc>
+    <loc>https://davclass8solutionhub.github.io/chapter8.html</loc>
     <priority>0.70</priority>
   </url>
+
   <url>
-    <loc>https://github.iochapter9.html</loc>
+    <loc>https://davclass8solutionhub.github.io/chapter9.html</loc>
     <priority>0.70</priority>
   </url>
+
   <url>
-    <loc>https://github.iochapter10.html</loc>
+    <loc>https://davclass8solutionhub.github.io/chapter10.html</loc>
     <priority>0.70</priority>
   </url>
+
   <url>
-    <loc>https://github.iochapter11.html</loc>
+    <loc>https://davclass8solutionhub.github.io/chapter11.html</loc>
     <priority>0.70</priority>
   </url>
+
   <url>
-    <loc>https://github.iochapter12.html</loc>
+    <loc>https://davclass8solutionhub.github.io/chapter12.html</loc>
     <priority>0.70</priority>
   </url>
+
   <url>
-    <loc>https://github.iochapter13.html</loc>
+    <loc>https://davclass8solutionhub.github.io/chapter13.html</loc>
     <priority>0.70</priority>
   </url>
+
   <url>
-    <loc>https://github.iochapter14.html</loc>
+    <loc>https://davclass8solutionhub.github.io/chapter14.html</loc>
     <priority>0.70</priority>
   </url>
+
   <url>
-    <loc>https://github.iochapter15.html</loc>
+    <loc>https://davclass8solutionhub.github.io/chapter15.html</loc>
     <priority>0.70</priority>
   </url>
+
   <url>
-    <loc>https://github.iochapter16.html</loc>
+    <loc>https://davclass8solutionhub.github.io/chapter16.html</loc>
     <priority>0.70</priority>
   </url>
+
   <url>
-    <loc>https://github.iochapter17.html</loc>
+    <loc>https://davclass8solutionhub.github.io/chapter17.html</loc>
     <priority>0.70</priority>
   </url>
+
   <url>
-    <loc>https://github.iochapter18.html</loc>
+    <loc>https://davclass8solutionhub.github.io/chapter18.html</loc>
     <priority>0.70</priority>
   </url>
+
   <url>
-    <loc>https://github.iochapter19.html</loc>
+    <loc>https://davclass8solutionhub.github.io/chapter19.html</loc>
     <priority>0.70</priority>
   </url>
+
   <url>
-    <loc>https://github.iochapter20.html</loc>
+    <loc>https://davclass8solutionhub.github.io/chapter20.html</loc>
     <priority>0.70</priority>
   </url>
+
 </urlset>
